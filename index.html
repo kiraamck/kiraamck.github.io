@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon-2.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="css/\styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bubbler+One&family=Cantata+One&family=Libre+Baskerville&family=Raleway+Dots&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Kira McKesey</title>
+  </head>
+  <body class="homeContainer">
+    <div class="home">
+      <header>
+        <div class="container">
+          <nav class="navbar">
+            <div class="navlogo">
+              <img src="images/logo1.png" alt="logo" id="logo">
+            </div>
+            <div class="nav-links">
+              <a class="darkgreen-banner" href="index.html">home</a>
+              <a class="darkgreen-banner" href="about.html">about me</a>
+              <a class="darkgreen-banner" href="designprocess.html">Design Process</a>
+              <a> <img src="images/sun.png" id=icon /> </a>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <div class="main-content">
+          <div class="name">
+            <h2>Kira McKesey</h2>
+          </div>
+          <div class="line"></div>
+          <img id="mainlogo" src="images/logo1.png" alt="Image of a pink logo" </img>
+          <h3>JUNIOR WEB DEVELOPER | JUNIOR UI DESIGNER</h3>
+          <div class="cvDownload">
+            <a class="cv" href="resume.pdf" target="_blank"> DOWNLOAD MY CV </a>
+          </div>
+        </div>
+      </main>
+    </div>
+<!--FOOTER-->
+    <footer>
+      <div class="footerLeft">
+        <div class="socialLinks">
+          <a class="linkedin" href="https://www.linkedin.com/in/kira-mckesey-1b170a170/" target="_blank">  <img src="images/linkedin.svg" /> </a>
+          <a class="mail" href="mailto:kira.mckesey@gmail.com" target="_blank"> <img src="images/mail.svg" /> </a>
+        </div>
+      </div>
+      <div class"footerRight">
+        <div class="copyRight">
+          <p>&copy KIRA MCKESEY 2022</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+<!--JAVASCRIPT-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    var icon = document.getElementById("icon");
+
+    icon.onclick = function (){
+      document.body.classList.toggle("light-theme");
+      if(document.body.classList.contains("light-theme")){
+        icon.src = "images/moon.png";
+        logo.src = "images/logo2.png";
+        mainlogo.src = "images/logo2.png";
+        wraparrow.src = "images/1x/Asset 28.svg";
+        print.console("light theme selected");
+      }else{
+        icon.src = "images/sun.png";
+        logo.src = "images/logo1.png";
+        mainlogo.src = "images/logo1.png";
+        wraparrow.src = "images/1x/Asset 29.svg";
+        print.console("dark theme selected");
+      }
+    }
+  </script>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon-2.ico">
+    <!-- Devicons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css">
+    <link rel="stylesheet" href="css/\styles.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>About Me</title>
+  </head>
+  <body class="about">
+    <header>
+      <div class="container">
+        <nav class="navbar">
+          <div class="navlogo">
+            <img src="images/logo1.png" alt="logo" id="logo">
+          </div>
+          <div class="nav-links">
+            <a class="darkgreen-banner" href="index.html">home</a>
+            <a class="darkgreen-banner" href="about.html">about me</a>
+            <a class="darkgreen-banner" href="designprocess.html">Design Process</a>
+            <a> <img src="images/sun.png" id=icon /> </a>
+          </div>
+          <!--<img src="images/menu-btn.png" alt="" class="menu-btn"/>-->
+        </nav>
+      </div>
+    </header>
+    <main>
+       <div class="aboutContainer">
+         <h2>Hi, I'm Kira!</h2>
+         <div class="blurb">
+           <img src="images/profile.jpeg" alt="profile picture" class="profile">
+           <h4> Hi! My name is Kira and I'm a Junior Front End Web Developer and UI Designer!
+           I have expeince working with HTML5, CSS, JavaScript, Adobe XD, Photoshop, and Adobe Illustrator. I love making clean responsive designs for a wide range of audiences. My previous work experince has taught me how to be a leader, effective communicator, and excellent time management skills. I enjoy working in fast paced enviorments and problem solving.
+           I am excited to start this new journey! </h4>
+         </div>
+       <div class="skillContainer">
+         <ul class="skillIcons">
+           <li class="skillsBox">
+             <i class="devicon-html5-plain"></i>
+             <p> HTML5 </p>
+           </li>
+           <li class="skillsBox">
+             <i class="devicon-css3-plain"></i>
+             <p> CSS3 </p>
+           </li>
+           <li class="skillsBox">
+             <i class="devicon-javascript-plain"></i>
+             <p> JavaScript </p>
+           </li>
+           <li class="skillsBox">
+             <i class="devicon-xd-plain"></i>
+             <p> Adobe XD </p>
+           </li>
+           <li class="skillsBox">
+            <i class="devicon-illustrator-plain"></i>
+            <p> Adobe Illustrator </p>
+          </li>
+          <li class="skillsBox">
+            <i class="devicon-photoshop-plain"></i>
+            <p> Photo </p>
+          </li>
+         </ul>
+       </div>
+     </div>
+    </main>
+  <!--FOOTER-->
+    <footer>
+      <div class="footerLeft">
+        <div class="socialLinks">
+          <a class="linkedin" href="https://www.linkedin.com/in/kira-mckesey-1b170a170/" target="_blank">  <img src="images/linkedin.svg" /> </a>
+          <a class="mail" href="mailto:kira.mckesey@gmail.com" target="_blank"> <img src="images/mail.svg" /> </a>
+        </div>
+      </div>
+      <div class"footerRight">
+        <div class="copyRight">
+          <p>&copy KIRA MCKESEY 2022</p>
+        </div>
+      </div>
+    </footer>
+ </body>
+ <!--JAVASCRIPT-->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+ <script>
+   var icon = document.getElementById("icon");
+
+   icon.onclick = function (){
+     document.body.classList.toggle("light-theme");
+     if(document.body.classList.contains("light-theme")){
+       icon.src = "images/moon.png";
+       logo.src = "images/logo2.png";
+     }else{
+       icon.src = "images/sun.png";
+       logo.src = "images/logo1.png";
+     }
+   }
+ </script>
+ </html>
